@@ -56,10 +56,10 @@ async def start_handler(bot: Client, m: Message):
         quote=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("Developer - @pro_morningstar", url="https://t.me/pro_morningstar")],
-                [InlineKeyboardButton("Support Group", url="https://t.me/Movies_request0"),
-                 InlineKeyboardButton("Bots Channel", url="https://t.me/Movies_Unloaded")],
-                [InlineKeyboardButton("Open Settings", callback_data="openSettings")],
+                [InlineKeyboardButton("🧑‍💻Developer - @pro_morningstar", url="https://t.me/pro_morningstar")],
+                [InlineKeyboardButton("👥Support Group", url="https://t.me/Movies_request0"),
+                 InlineKeyboardButton("🤖Bots Channel", url="https://t.me/Movies_Unloaded")],
+                [InlineKeyboardButton("⚙️Open Settings", callback_data="openSettings")],
                 [InlineKeyboardButton("Close", callback_data="closeMeh")]
             ]
         )
@@ -291,11 +291,11 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
             text="Do you like to rename file?\nChoose a Button from below:",
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("Rename File", callback_data="renameFile_Yes")],
-                    [InlineKeyboardButton("Keep Default", callback_data="renameFile_No")]
+                    [InlineKeyboardButton("✏️Rename File", callback_data="renameFile_Yes")],
+                    [InlineKeyboardButton("🖊️Keep Default", callback_data="renameFile_No")]
                 ]
             )
-        )
+        ) 
     elif "cancelProcess" in cb.data:
         await cb.message.edit("Trying to Delete Working DIR ...")
         await delete_all(root=f"{Config.DOWN_PATH}/{cb.from_user.id}/")
@@ -311,7 +311,7 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
                 reply_to_message_id=message_.message_id,
                 reply_markup=InlineKeyboardMarkup(
                     [
-                        [InlineKeyboardButton("Remove File", callback_data=f"removeFile_{str(message_.message_id)}")]
+                        [InlineKeyboardButton("🗑️Remove File", callback_data=f"removeFile_{str(message_.message_id)}")]
                     ]
                 )
             )
@@ -363,7 +363,7 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
         await cb.message.edit(
             text=Config.START_TEXT,
             parse_mode="Markdown",
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Developer - @pro_morningstar", url="https://t.me/pro_morningstar"), InlineKeyboardButton("Support Group", url="https://t.me/Movies_request0")], [InlineKeyboardButton("Bots Channel", url="https://t.me/Movies_Unloaded")]]),
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🧑‍💻Developer - @pro_morningstar", url="https://t.me/pro_morningstar"), InlineKeyboardButton("Support Group", url="https://t.me/Movies_request0")], [InlineKeyboardButton("Bots Channel", url="https://t.me/Movies_Unloaded")]]),
             disable_web_page_preview=True
         )
     elif "showThumbnail" in cb.data:
