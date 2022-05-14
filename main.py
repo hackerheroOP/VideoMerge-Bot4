@@ -57,7 +57,7 @@ async def start_handler(bot: Client, m: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton("🧑‍💻Developer - @pro_morningstar", url="https://t.me/pro_morningstar")],
-                [InlineKeyboardButton("👥Support Group", url="https://t.me/Movies_request0"),
+                [InlineKeyboardButton("👥Support Group", url="https://t.me/Movies_request_03"),
                  InlineKeyboardButton("🤖Bots Channel", url="https://t.me/Movies_Unloaded")],
                 [InlineKeyboardButton("⚙️Open Settings", callback_data="openSettings")],
                 [InlineKeyboardButton("Close", callback_data="closeMeh")]
@@ -355,7 +355,7 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
                 return
             except Exception:
                 await cb.message.edit(
-                    text="Something went Wrong. Contact my [Support Group](https://t.me/Movies_request0).",
+                    text="Something went Wrong. Contact my [Support Group](https://t.me/Movies_request_03).",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
