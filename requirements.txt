@@ -1,3 +1,4 @@
+https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
 pyrogram==1.4.16
 TgCrypto
 hachoir
