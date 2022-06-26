@@ -18,4 +18,4 @@ WORKDIR /VideoMerge-Bot
 
 RUN pip3 install -U -r requirements.txt
 
-CMD python3 PROCFILE
+CMD python3 main.py
