@@ -14,7 +14,7 @@ RUN git clone https://github.com/hackerheroOP/VideoMerge-Bot
 
 RUN cd VideoMerge-Bot
 
-WORKDIR /PROJECTNAMEHERE
+WORKDIR /VideoMerge-Bot
 
 RUN pip3 install -U -r requirements.txt
 
