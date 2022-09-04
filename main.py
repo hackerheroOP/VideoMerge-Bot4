@@ -343,10 +343,10 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton(" 📧 Contact Us", url=https://t.me/Pro_Morningstar)
+                                InlineKeyboardButton(" 📧 Contact Us", url="https://t.me/Pro_Morningstar")
                             ],
                             [
-                                InlineKeyboardButton(" 📧 ", url=https:/t.me/Pro_Morningstar)
+                                InlineKeyboardButton(" 📧 ", url="https://t.me/Pro_Morningstar")
                             ]
                         ]
                     ),
