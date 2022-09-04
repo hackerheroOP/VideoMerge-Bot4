@@ -10,7 +10,7 @@ RUN pip3 install -U pip
 
 RUN cd /
 
-RUN git clone https://github.com/hackerheroOP/VideoMerge-Bot2
+RUN git clone https://github.com/hackerheroOP/VideoMerge-Bot3
 
 RUN cd VideoMerge-Bot3
 
