@@ -12,9 +12,9 @@ RUN cd /
 
 RUN git clone https://github.com/hackerheroOP/VideoMerge-Bot2
 
-RUN cd VideoMerge-Bot2
+RUN cd VideoMerge-Bot3
 
-WORKDIR /VideoMerge-Bot2
+WORKDIR /VideoMerge-Bot3
 
 RUN pip3 install -U -r requirements.txt
 
