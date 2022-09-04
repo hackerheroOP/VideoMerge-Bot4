@@ -19,12 +19,10 @@ class Config(object):
     BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False))
     BOT_OWNER = int(os.environ.get("BOT_OWNER", 1251111009)
 
-    START_TEXT = """
-Hi Unkil, I am Video Merge Bot!
+    START_TEXT = " Hi Unkil, I am Video Merge Bot!
 I can Merge Multiple Videos in One Video. Video Formats should be same.
 
-Made by @pro_morningstar
-"""
+Made by @pro_morningstar "
     CAPTION = "Video Merged by @{}\n\nMade by @pro_morningstar"
     PROGRESS = """
 Percentage : {0}%
